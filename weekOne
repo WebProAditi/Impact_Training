@@ -1,0 +1,20 @@
+import java.util.*;
+public class weekOne {
+public static void main(String[] args) {   
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter row: ");
+    int n=sc.nextInt();
+    System.out.println("enter cols: ");
+    int m=sc.nextInt();
+    System.out.println("enter seat no:");
+    int seat=sc.nextInt();
+    if(seat<m||seat%m==0||seat%m==1){
+        System.out.println("cse\t");
+    }
+    else{
+        System.out.println("es\t");
+    }
+    sc.close();
+}
+    
+}
