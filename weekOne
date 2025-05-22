@@ -18,3 +18,104 @@ public static void main(String[] args) {
 }
     
 }
+
+
+import java.util.*;
+public class prc {
+
+    public static void main(String[] args) {
+       Scanner sc =new Scanner(System.in);
+       System.out.println("enter 3 digit no:- ");
+int a =sc.nextInt();
+
+int b= a%10;
+int middle=(a/10)%10;
+int d=a/100;
+System.out.println(b*100+middle*10+d);
+
+
+
+
+import java.util.*;
+public class prc {
+
+public static void main(String[] args) {
+Scanner sc =new Scanner(System.in);
+System.out.println("enter a trendy no(32 digit): ");
+int n=sc.nextInt();
+if(n<=999 & n>=100){
+    int mid=(n/10)%10;
+if(mid%3==0){
+    System.out.println("trendy no");
+}
+else{
+    System.out.println("not a trendy no");
+
+}
+}else{
+    System.out.println("invalid no");
+}
+sc.close();
+}
+}
+
+
+
+
+
+import java.util.*;
+public class prc {
+
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter 2 digit no");
+int n=sc.nextInt();
+//19---- 1+9=10+9=9*1
+        System.out.println("enter 2 digit no");
+        int m=sc.nextInt();
+
+for (int i = n; i <=m; i++) {
+
+    int a=i/10;
+    int b=i%10;
+int sum=a+b;
+int prod=a*b;
+int total_sum=sum+prod;
+if(total_sum==i){
+
+    System.out.println(i);
+}
+
+
+
+import java.util.*;
+public class prc {
+
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter a no: ");
+        int evenSum=0;
+        int oddSum=0;
+int count =0;
+        int n=sc.nextInt();
+        while(n!=0){
+
+            int r=n%10;
+            // System.out.println(r);   ----for print separate digits
+            n=n/10;
+            count++;
+            if(r%2==0){
+                evenSum=evenSum+r;
+            }
+            else{
+                oddSum+=r;
+            }
+
+           }
+           System.out.println("even sum is "+evenSum);
+           System.out.println("odd sum is "+oddSum);
+           System.out.println("count is "+count);
+           sc.close();
+
+        }
+    }
