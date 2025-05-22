@@ -1,1 +1,127 @@
 
+import java.util.*;
+public class prc {
+
+public static void main(String[] args) {
+Scanner sc =new Scanner(System.in);
+System.out.println("enter a no: ");
+
+int n=sc.nextInt();
+int sum=0;
+int temp=n;
+
+System.out.println(fact);
+while (n!=0) {
+    int r=n%10;
+    n/=10;
+    int fact=1;
+
+for (int i = 1; i <=r; i++) {
+    fact*=i;
+}
+sum+=fact;
+
+}
+if (sum==temp) {
+    System.out.println(temp+" is factorion");
+} else {
+    System.out.println(temp+" is not factorion");
+
+}
+ex:-145   1! +4! +5! =145-----It is known as a factorion — a number that is equal to the sum of the factorials of its digits.
+sc.close();
+}
+}
+
+
+
+
+import java.util.*;
+public class prc {
+
+//      *
+//     **
+//    ***
+//   ****
+
+i=0;i<n  j=0;j<n-i   s=0;s<=i+1
+
+public static void main(String[] args) {
+Scanner sc =new Scanner(System.in);
+System.out.println("enter a no: ");
+
+int n=sc.nextInt();
+for (int i = 1; i <=n; i++) {
+    for (int s = 0; s <n-i ; s++) {
+        System.out.print("1");
+    }
+    for (int j = 1; j <=i ; j++) {
+        
+        System.out.print("*");
+    }
+    System.out.println();
+}
+for (int i = 1; i <=n; i++) {
+    for (int s = 0; s <=i-1 ; s++) {
+        System.out.print("1");
+    }
+    for (int j = 1; j <=n ; j++) {
+        
+        System.out.print("*");
+    }
+    System.out.println();
+}
+
+sc.close();
+}
+}
+
+
+
+
+
+import java.util.*;
+
+public class prc {
+
+public static void main(String[] args) {
+Scanner sc =new Scanner(System.in);
+System.out.println("enter  arr size: ");
+
+int n=sc.nextInt();
+int sum=0;
+int arr[]=new int[n];
+int arr1[]=new int[n];
+
+System.out.println("enter arr elemnets:");
+for (int i = 0; i < n; i++) {
+    arr[i]=sc.nextInt();
+    
+    
+}
+
+System.out.println("enter arr1 elemnets:");
+for (int i = 0; i < n; i++) {
+
+    arr1[i]=sc.nextInt();
+     //243+564=807   but in o/p=708
+  
+}
+int res[]=new int[n+1];
+int carry=0;
+if(carry>0)
+res[n]=carry;
+for (int i = 0; i < n; i++) {
+    sum =arr[i]+arr1[i]+carry;
+        res[i]=sum%10;
+        carry=sum/10;
+
+}
+System.out.println("sum of arr ");
+for (int i = 0; i < n; i++) {
+    System.out.print(res[i]);
+}
+
+sc.close();
+}
+}
