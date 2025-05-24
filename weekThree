@@ -1,1 +1,109 @@
 
+import java.util.*;
+public class prc {
+//strings
+    public static void main(String[] args) {
+        String a="aditi";
+        String b="aditi";
+        String s=new String("aditi");
+        String s1=new String("aditi");
+System.out.println(a==b );
+System.out.println(a==s1 );
+System.out.println(s1==s );
+System.out.println(s1.equals(s) );
+System.out.println(s1.indexOf("i") );
+System.out.println(s.charAt(3) );
+System.out.println(b.concat(" nice girl") );
+System.out.println(s1.length() );
+System.out.println(b.contains("u") );
+System.out.println(s1.repeat(3) );
+System.out.println(s1==s );
+System.out.println(s1==s );
+reverse()
+
+    }
+}
+
+
+
+import java.util.*;
+public class prc {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        char tar=sc.next().charAt(0);
+        int count=0;
+        for (int i = 0; i < a.length(); i++) {
+        if(a.charAt(i)==tar){
+count++;
+        }    
+        }
+      System.out.println(count);  
+    }
+}
+
+
+
+
+import java.util.*;
+public class prc {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        String rev="";
+        for (int i = a.length()-1;i >=0; i--) {
+       rev+=a.charAt(i);   
+        }
+        if(a.equalsIgnoreCase(rev)){
+
+            System.out.println(a +" is palindrone");  
+        }
+        else{
+                        System.out.println(a +" isnot palindrone");  
+
+        }
+    }
+}
+
+
+import java.util.*;
+public class prc {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        String rev="";
+        for (int i = a.length()-1;i >=0; i--) {
+       rev+=a.charAt(i);   
+        }
+        if(a.equalsIgnoreCase(rev)){
+
+            System.out.println(a +" is palindrone");  
+        }
+        else{
+                        System.out.println(a +" isnot palindrone");  
+
+        }
+    }
+}
+
+
+
+import java.util.*;
+public class prc {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+            int count=0;
+        for (int i = 0; i < a.length(); i++) {
+        if(Character.isLetter(a.charAt(i))){
+count++;
+        }    
+        }
+      System.out.println("letters count "+count);  
+        }
+        
+    }
